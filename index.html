@@ -80,10 +80,15 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
-            border: 3px solid transparent;
-            background: linear-gradient(white, white) padding-box,
-                        linear-gradient(45deg, #ff1493, #32cd32, #ffa500, #ffff00) border-box;
+            border: 3px solid #ff1493;
+            background: white;
         }
+        
+        .feature-card:nth-child(2) { border-color: #ff69b4; }
+        .feature-card:nth-child(3) { border-color: #32cd32; }
+        .feature-card:nth-child(4) { border-color: #ffa500; }
+        .feature-card:nth-child(5) { border-color: #ffff00; }
+        .feature-card:nth-child(6) { border-color: #32cd32; }
         
         .feature-card:hover {
             transform: translateY(-5px);
@@ -108,7 +113,7 @@
         }
         
         .screenshots {
-            background: linear-gradient(135deg, #ff69b4 0%, #ffff00 100%);
+            background: #ff69b4;
             padding: 80px 0;
             text-align: center;
         }
@@ -163,7 +168,7 @@
         }
         
         .testimonials {
-            background: linear-gradient(135deg, #ff1493 0%, #ffa500 50%, #32cd32 100%);
+            background: #ffa500;
             padding: 80px 0;
             text-align: center;
             color: white;
@@ -183,7 +188,7 @@
         }
         
         footer {
-            background: linear-gradient(135deg, #32cd32 0%, #ff1493 100%);
+            background: #32cd32;
             color: white;
             text-align: center;
             padding: 40px 0;
@@ -228,7 +233,7 @@
         <div class="container">
             <h1 class="logo">🤖 ThinkOff</h1>
             <p class="tagline">Find the Best AI for You</p>
-            <a href="https://play.google.com/apps/internaltest/4701641089978287133" class="cta-button">
+            <a href="https://play.google.com/store/apps/details?id=com.chatwithlocalai.app" class="cta-button">
                 Download on Google Play
             </a>
         </div>
@@ -240,15 +245,14 @@
                 Why ThinkOff?
             </h2>
             <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
-                Stop guessing which AI gives the best answers. Let ThinkOff compare them for you and find the winner!  </p>  If you run an installation yourself let it shine, as a provider or a judge!
+                Stop guessing which AI gives the best answers. Let ThinkOff compare them for you and find the winner!
             </p>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3 class="feature-title">Instant Comparison</h3>
-                    <p class="feature-desc">Send your question to multiple AI providers simultaneously and see who gives the best answer. 
-                     </p>
+                    <p class="feature-desc">Send your question to multiple AI providers simultaneously and see who gives the best answer.</p>
                 </div>
                 
                 <div class="feature-card">
@@ -290,11 +294,11 @@
             <p style="font-size: 1.2rem; color: #666; margin-bottom: 20px;">Beautiful, intuitive interface designed for the best AI comparison experience</p>
             
             <div class="screenshot-grid">
-                <!-- Add your screenshots here -->
-                <img src="screenshots/chat-screen.png" alt="Chat Screen" class="screenshot">
-                <img src="screenshots/comparison-results.png" alt="Comparison Results" class="screenshot">
-                <img src="screenshots/rankings.png" alt="Rankings" class="screenshot">
-                <img src="screenshots/settings.png" alt="Settings" class="screenshot">
+                <!-- Screenshots from your GitHub repository -->
+                <img src="screenshots/chat-screen.png" alt="ThinkOff Chat Screen" class="screenshot">
+                <img src="screenshots/comparison-results.png" alt="AI Comparison Results" class="screenshot">
+                <img src="screenshots/rankings.png" alt="AI Rankings" class="screenshot">
+                <img src="screenshots/settings.png" alt="App Settings" class="screenshot">
             </div>
         </div>
     </section>
@@ -317,17 +321,17 @@
 
     <section class="testimonials">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 40px;"What users could say :) looking for testers!" </h2>
+            <h2 style="font-size: 2.5rem; margin-bottom: 40px;">What Users Say</h2>
             
             <div class="testimonial">
                 "Finally! No more guessing which AI to use. ThinkOff shows me exactly which one gives the best answer for my specific question."
             </div>
-            <div class="testimonial-author">- hypothetical Alpha Tester</div>
-            <p></p>
+            <div class="testimonial-author">- Alpha Tester</div>
+            
             <div class="testimonial">
                 "The tap-to-like feature is genius. So much easier than traditional voting systems."
             </div>
-            <div class="testimonial-author">- non-existing Beta User</div>
+            <div class="testimonial-author">- Beta User</div>
         </div>
     </section>
 
@@ -343,7 +347,7 @@
             </div>
             
             <p style="color: #888; font-size: 0.9rem; margin-top: 20px;">
-                © 2025 ThinkOff / Petrus Pennanen. Made with ❤️ for AI enthusiasts.
+                © 2024 ThinkOff. Made with ❤️ for AI enthusiasts.
             </p>
         </div>
     </footer>
